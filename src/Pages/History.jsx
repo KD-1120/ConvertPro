@@ -9,7 +9,7 @@ import {
   Folder,
   Search
 } from 'lucide-react';
-import './history.css';
+import './History.css';
 
 const ConversionHistory = () => {
   const [activeTab, setActiveTab] = useState('all');
