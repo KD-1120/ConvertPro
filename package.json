@@ -12,6 +12,7 @@
   "dependencies": {
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.7",
+    "@vercel/analytics": "^1.5.0",
     "bootstrap": "^5.3.3",
     "file-saver": "^2.0.5",
     "jszip": "^3.10.1",

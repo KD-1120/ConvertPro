@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap styles
 import "./App.css"; // Ensure this file exists
-
+import { Analytics } from "@vercel/analytics/react"
 // Import Components
 import NavBar from "./Components/Navbar.jsx"; // Check exact file name
 import Home from "./Pages/Home.jsx";
@@ -25,6 +25,8 @@ function App() {
   };
 
   return (
+    <>
+    <Analytics id="G-4ZQZQZQZQZ" />
     <BrowserRouter>
       <Container style={{ marginTop: "20px", width: "100vw" }}>
         <NavBar
@@ -41,6 +43,7 @@ function App() {
         <Footer />
       </Container>
     </BrowserRouter>
+    </>
   );
 }
 
